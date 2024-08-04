@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Upstream: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
 
 # [Ctrl-RightArrow] - move forward one word
