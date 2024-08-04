@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 function git-change-author-frank {
   local name="Frank Lan"
   local email="franklan118@gmail.com"
