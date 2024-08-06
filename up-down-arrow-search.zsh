@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-# Upstream: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
+## Upstream: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
 
 # Start typing + [Up-Arrow] - fuzzy find history forward
 autoload -U up-line-or-beginning-search
