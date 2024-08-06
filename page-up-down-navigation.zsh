@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
-# Upstream: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
+
+## Upstream: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
 
 # [PageUp] - Up a line of history
 if [[ -n "${terminfo[kpp]}" ]]; then
