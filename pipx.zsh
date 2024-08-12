@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if [ -d "/opt/homebrew/opt/grep/libexec/gnubin" ]; then
   export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
