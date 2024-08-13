@@ -2,4 +2,5 @@
 
 function zi-update-all {
   zi update --parallel "$(nproc)"
+  source ~/.zshrc
 }
