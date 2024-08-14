@@ -2,6 +2,10 @@
 
 alias git-delete-all-branches="git for-each-ref --format '%(refname:short)' refs/heads | grep -v 'master|main' | xargs git branch -D"
 
+function git-config-global-auto-upstream {
+  git config --global --add --bool push.autoSetupRemote true
+}
+
 function gc1 {
   git clone --depth 1 --filter=blob:none --recurse-submodules -j"$(nproc)" --remote-submodules "$1"
 }
