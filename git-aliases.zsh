@@ -4,8 +4,8 @@ alias git-amend-all="git add . && git commit --amend -C HEAD"
 
 function git-delete-all-branches {
   git for-each-ref --format '%(refname:short)' refs/heads \
-  | grep -v 'master|main' \
-  | xargs git branch -D
+    | grep -v 'master|main' \
+    | xargs git branch -D
 }
 
 function git-config-global-auto-upstream {
