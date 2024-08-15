@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 alias git-delete-all-branches="git for-each-ref --format '%(refname:short)' refs/heads | grep -v 'master|main' | xargs git branch -D"
+alias git-amend-all="git add . && git commit --amend -C HEAD"
 
 function git-config-global-auto-upstream {
   git config --global --add --bool push.autoSetupRemote true
