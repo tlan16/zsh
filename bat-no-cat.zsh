@@ -6,6 +6,6 @@ if type "bat" > /dev/null; then
     bat cache --build
   fi
   if [[ $- == *i* ]]; then # if is interactive
-    alias "cat=bat --paging=never"
+    alias "cat=bat --paging=never --style=plain,header"
   fi
 fi
