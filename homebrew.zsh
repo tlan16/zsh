@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 function brew-cleanup-all {
+  brew autoremove
   brew cleanup --prune=all
 }
 
