@@ -12,5 +12,7 @@ if [ -d "/opt/homebrew/sbin" ] ; then
   export PATH="/opt/homebrew/sbin:$PATH"
 fi
 
-alias brew-install-from-source="brew install --build-from-source"
-alias brew-outdated-formula="brew outdated --formula"
+if [ -d "/opt/homebrew" ] ; then
+  alias brew-install-from-source="brew install --build-from-source"
+  alias brew-outdated-formula="brew outdated --formula"
+fi
