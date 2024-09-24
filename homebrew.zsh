@@ -13,3 +13,4 @@ if [ -d "/opt/homebrew/sbin" ] ; then
 fi
 
 alias brew-install-from-source="brew install --build-from-source"
+alias brew-outdated-formula="brew outdated --formula"
