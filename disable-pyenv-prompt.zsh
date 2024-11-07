@@ -1,3 +1,3 @@
 #!/usr/bin/env zsh
 
-export PYENV_VIRTUALENV_DISABLE_PROMPT=false
+typeset -g PYENV_VIRTUALENV_DISABLE_PROMPT=false
