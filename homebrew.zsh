@@ -16,4 +16,5 @@ if [ -d "/opt/homebrew" ] ; then
   alias brew-install-from-source="brew install --build-from-source"
   alias brew-outdated-formula="brew outdated --formula"
   alias brew-upgrade-all-formula='brew outdated --formulae | xargs -I{} brew reinstall --build-from-source {}'
+  alias brew-remove-lock="$(brew --prefix)/var/homebrew/locks"
 fi
