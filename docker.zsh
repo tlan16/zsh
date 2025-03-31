@@ -10,3 +10,7 @@ function docker-kill-all {
 if [ -d "$HOME/.docker/bin" ] ; then
   export PATH="${PATH}:${HOME}/.docker/bin"
 fi
+
+if [ -d "$HOME/.docker/completions" ] ; then
+  fpath=("$HOME/.docker/completions" $fpath)
+fi
