@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 git_mirror() {
   local uuid dir repo1 repo2
   uuid=$(uuidgen)
