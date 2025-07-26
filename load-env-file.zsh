@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-load_env_file() {
+load-env-file() {
   local env_file="$1"
 
   if [ ! -f "$env_file" ]; then
