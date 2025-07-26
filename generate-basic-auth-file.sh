@@ -1,6 +1,4 @@
 generate-basic-auth-file() {
-  set -eo pipefail
-
   # Function to display usage
   _gba_usage() {
     echo "Usage: generate-basic-auth-file [-u username] [-p password] [-f filepath]"
