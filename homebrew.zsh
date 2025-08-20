@@ -5,6 +5,17 @@ function brew-cleanup-all {
   brew cleanup --prune=all
 }
 
+if [ -f "/opt/homebrew/bin/brew" ] ; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [ -f "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
 if [ -d "/opt/homebrew/bin" ] ; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
