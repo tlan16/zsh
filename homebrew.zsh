@@ -5,6 +5,13 @@ function brew-cleanup-all {
   brew cleanup --prune=all
 }
 
+if [ -d "/usr/local/Homebrew" ] ; then
+  export HOMEBREW_PREFIX="/usr/local/Homebrew"
+  export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+  export MANPATH="$HOMEBREW_PREFIX/share/man:$MANPATH"
+  export INFOPATH="$HOMEBREW_PREFIX/share/info:$INFOPATH"
+fi
+
 if [ -f "/opt/homebrew/bin/brew" ] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 elif [ -f "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
