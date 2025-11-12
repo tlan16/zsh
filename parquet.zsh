@@ -6,3 +6,11 @@ function compress-parquet-files {
     duckdb -c "COPY (SELECT * FROM read_parquet('$file')) TO '$tmpfile' (FORMAT PARQUET, COMPRESSION 'zstd', COMPRESSION_LEVEL 22);" && mv -f "$tmpfile" "$file"
   done
 }
+
+function csv_to_parquet() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: csv_to_parquet <csv-file>"
+    return 1
+  fi
+  uvx --with pyarrow csv2parquet -c zstd "$1"
+}
