@@ -7,10 +7,10 @@ function compress-parquet-files {
   done
 }
 
-function csv_to_parquet() {
+function csv2parquet() {
   if [[ -z "$1" ]]; then
     echo "Usage: csv_to_parquet <csv-file>"
     return 1
   fi
-  uvx --with pyarrow csv2parquet -c zstd "$1"
+  uvx --with pyarrow csv2parquet --codec zstd "$1"
 }
