@@ -20,8 +20,15 @@ fi
 if [ -d "/opt/homebrew/bin" ] ; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
 if [ -d "/opt/homebrew/sbin" ] ; then
   export PATH="/opt/homebrew/sbin:$PATH"
+fi
+if [ -d "/home/linuxbrew/.linuxbrew/sbin" ] ; then
+  export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 fi
 
 if [ -d "/opt/homebrew" ] ; then
