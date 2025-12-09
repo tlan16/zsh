@@ -75,6 +75,7 @@ create-gh-repo() {
   local repo_name="$1"
   local clone_dir="${2:-$repo_name}"
   repo_name="${(L)repo_name}"
+  clone_dir="${(L)clone_dir}"
 
   if [[ -z "$repo_name" ]]; then
     echo "Error: Repository name is required." >&2
